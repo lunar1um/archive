@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Manrope:wght@200..800&display=swap");
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-jetbrains-mono: "Jetbrains Mono", monospace;
+    --font-manrope: "Manrope", sans-serif;
+
+    --animate-subtle-pulse: subtlePulse 2.5s ease-in-out infinite;
+    --animate-squish: squish 0.3s ease-in-out;
+
+    --animate-window-in: windowIn 0.1s ease-in-out forwards;
+    --animate-window-out: windowOut 0.1s ease-in-out forwards;
+    --animate-fade-in: fadeIn 0.5s ease-in-out forwards;
+
+    --animate-slide-in-left: slideInLeft 1s ease-in-out forwards;
+    --animate-slide-in-right: slideInRight 1s ease-in-out forwards;
+
+    @keyframes slideInLeft {
+        0% {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInRight {
+        0% {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes windowIn {
+        0% {
+            transform: scale(0.9);
+            opacity: 0;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    @keyframes windowOut {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(0.9);
+            opacity: 0;
+        }
+    }
+
+    @keyframes subtlePulse {
+        0%,
+        100% {
+            transform: scale(1) rotate(-11deg);
+        }
+        50% {
+            transform: scale(1.05) rotate(-9deg);
+        }
+    }
+
+    @keyframes squish {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(0.8);
+        }
+        75% {
+            transform: scale(1.02);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+}
+
+@layer components {
+    .shootingStar {
+        animation: dash 0.7s ease;
+    }
+
+    @keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes dash {
+        to {
+            stroke-dashoffset: -227.62;
+        }
+    }
+
+    .music-note {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        font-size: 16px;
+        opacity: 0;
+        animation: floatNote 1.2s ease-out forwards;
+        pointer-events: none;
+    }
+
+    @keyframes floatNote {
+        0% {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-60px) scale(0.8);
+            opacity: 0;
+        }
+    }
+}
