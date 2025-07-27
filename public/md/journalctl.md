@@ -74,3 +74,5 @@ i'm being absolute braindead and my insanely terrible memory is getting even wor
 nevermind, indomie is actually the best-selling of the instant noodles world, no wonder why it's so amazing!!!
 my wallet just hates me now, there's nothing in there when i wish there are......
 animations update soon???
+
+my laptop is tweaking so hard rn, i should consider building a new one
