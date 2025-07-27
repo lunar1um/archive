@@ -4,7 +4,7 @@ or also known as..
 - celestial
 - lemon
 - linear
-- everything moon related
+- lunaris (i really like this)
 - [my actual name]
 
 ### about
