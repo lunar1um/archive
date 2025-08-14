@@ -165,13 +165,7 @@ export default function App() {
               icon="discord"
               name="Discord"
             />
-
-            <Contact
-              link="https://www.roblox.com/users/342032186/profile"
-              icon="roblox"
-              name="Roblox"
-            />
-
+            
             <Contact
               link="https://www.youtube.com/@lunar1997"
               icon="youtube"
@@ -195,6 +189,8 @@ export default function App() {
               icon="watchlist"
               name="Watchlist"
             />
+
+            <Contact link="about:blank" icon="blank" name="Blank" />
 
             <Contact link="about:blank" icon="blank" name="Blank" />
           </div>
