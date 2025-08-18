@@ -149,7 +149,7 @@ export default function App() {
             />
 
             <Contact
-              link="mailto:lunar1um@proton.me"
+              link="mailto:lunarium.dev@proton.me"
               icon="email"
               name="Email"
             />
