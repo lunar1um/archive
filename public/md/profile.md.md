@@ -24,6 +24,7 @@ i like desaturated colors and vibrant ones sometimes
 
 ### fun fact(s)
 my birthday is in november, the rest is for you to figure out...  
+my github was really dead until linux is the key that got me into coding, gotta give it the credit for that..!  
 
 ### know me better (if u want)
 i love talking, pls pls i love being disturbed (not when i'm working tho)  
